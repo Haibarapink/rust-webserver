@@ -6,6 +6,7 @@ use webser::Connection;
 
 const CRLF : &str = "\r\n";
 const START : &str=  ".";
+
 fn main() {
     let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
     for client in listener.incoming() {
